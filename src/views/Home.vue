@@ -1,5 +1,5 @@
 <template>
-  <div class="home-dio" style="margin: 10px">
+  <div class="home" style="margin: 10px">
     <v-containter>
       <v-row>
         <v-col cols="14">
@@ -18,6 +18,7 @@
 </template>
 <script>
 export default {
-  name: 'home-dio',
+  //eslint-disable-next-line 
+  name: 'Home',
 }
 </script>

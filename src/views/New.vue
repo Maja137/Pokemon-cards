@@ -1,5 +1,5 @@
 <template>
-  <div class="new-dio">
+  <div class="new">
   <v-row>
     <v-dialog v-model="addDialog" width="500">
       <template v-slot:activator="{ on, attrs }">
@@ -33,7 +33,8 @@
 import NewCard from '../components/NewCard.vue';
 
 export default {
-  name: 'new-dio',
+  //eslint-disable-next-line 
+  name: 'New',
 
   Components: {
     NewCard

@@ -1,24 +1,28 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import Home from '../views/Home.vue'
+import axios from 'axios'
+import VueAxios from 'vue-axios'
+
+Vue.use(VueAxios, axios)
 
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
-    name: 'home-dio',
-    component: HomeView
+    name: 'Home',
+    component: Home
   },
   {
     path: '/cards',
-    name: 'cards-dio',
-    component: () => import('../views/CardsView.vue')
+    name: 'Cards',
+    component: () => import('../views/Cards.vue')
   },
   {
     path: '/newcard',
-    name: 'new-dio',
-    component: () => import('../views/NewCardView.vue')
+    name: 'New',
+    component: () => import('../views/New.vue')
   }
 ]
 
