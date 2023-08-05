@@ -32,7 +32,7 @@ export default {
   name: 'Cards',
   
   Components: {
-    PokemonCards,
+    PokemonCards
   },
 
   data() {
@@ -104,4 +104,3 @@ export default {
   }
 }
 </script>
-
