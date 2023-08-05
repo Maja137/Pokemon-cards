@@ -1,5 +1,5 @@
 <template>
-  <v-app id="inspire">
+  <v-app id="app">
     <v-app-bar app color="yellow" flat>
       <v-avatar class="mr-10" color="grey darken-1" size="70">
         <img src="https://m.media-amazon.com/images/I/71Lbl3+oWpL.jpg"></v-avatar>
@@ -17,6 +17,7 @@
 </template>
 
 <script>
+
 
 export default {
   name: 'App',
