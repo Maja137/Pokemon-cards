@@ -6,9 +6,8 @@
             cols="12"
         >
           <v-text-field
-              v-model="title"
-              :counter="10"
-              label=""
+              v-model="name"
+              label="Name"
               required
           ></v-text-field>
         </v-col>
@@ -17,9 +16,8 @@
             cols="12"
         >
           <v-text-field
-              v-model="author"
-              :counter="10"
-              label="Author"
+              v-model="type"
+              label="Type"
               required
           ></v-text-field>
         </v-col>
@@ -28,8 +26,8 @@
             cols="12"
         >
           <v-text-field
-              v-model="price"
-              label="Price"
+              v-model="hp"
+              label="Hit Point"
               type="number"
               required
           ></v-text-field>
@@ -51,9 +49,9 @@ export default {
   name: 'NewCard',
   data () {
     return {
-      title: '',
-      author: '',
-      price: '',
+      name: '',
+      type: '',
+      hp: '',
     }
   },
   methods: {

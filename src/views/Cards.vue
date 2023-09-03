@@ -6,7 +6,7 @@
           :loading="isLoading"></v-text-field>
       </v-col>
       <v-col cols="12" md="6">
-        <v-text-field v-model="types" append-icon="mdi-magnify" label="Search by types" single-line hide-details
+        <v-text-field v-model="types" append-icon="mdi-magnify" label="Search by type" single-line hide-details
           :loading="isLoadingTypes"></v-text-field>
       </v-col>
     </v-row>
@@ -69,7 +69,7 @@ export default {
         this.isLoadingTypes = false
       })
     },
-
+    
     fetchEntriesDebounced() {
       clearTimeout(this._searchTimerId)
       this._searchTimerId = setTimeout(() => {
