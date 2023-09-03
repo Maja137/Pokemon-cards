@@ -3,15 +3,13 @@
     <v-container>
       <v-row>
         <v-col
-            cols="12"
-        >
+            cols="12">
           <v-text-field
               v-model="name"
               label="Name"
               required
           ></v-text-field>
         </v-col>
-
         <v-col
             cols="12"
         >
@@ -21,7 +19,6 @@
               required
           ></v-text-field>
         </v-col>
-
         <v-col
             cols="12"
         >
@@ -32,13 +29,11 @@
               required
           ></v-text-field>
         </v-col>
-
         <v-col cols="12">
           <v-btn type="submit" variant="primary">
             Submit
           </v-btn>
         </v-col>
-
       </v-row>
     </v-container>
   </v-form>

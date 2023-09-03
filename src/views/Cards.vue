@@ -59,7 +59,7 @@ export default {
         params: {
           'offset': this.perPage * (this.page - 1),
           'name': this.search,
-          'types': this.types
+          'types[0]': this.types
         }
       }).then((response) => {
         console.log(response.data)
